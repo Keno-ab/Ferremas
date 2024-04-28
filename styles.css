@@ -18,6 +18,21 @@
     nav button:hover {
         background-color: #777;
     }
+
+    .nav-button {
+      background-color: #3700ff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      margin: 0 5px;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none; /* Para quitar el subrayado predeterminado en los enlaces */
+  }
+  
+  .nav-button:hover {
+      background-color: #0030ff;
+  }
     /* Estilos para el menú desplegable */
     .dropdown-content-hauto {
         display: none;
