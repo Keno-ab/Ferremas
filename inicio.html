@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferremas</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+</head>
+<body>
+    <nav>
+
+        <button>Inicio</button>
+        <div class="dropdown">
+            <button class="dropbtn">Herramientas Manuales</button>
+            <div class="dropdown-content-hman dropdown-content">
+                <a href="">Martillos</a>
+                <a href="">Destornilladores</a>
+                <a href="">Llaves</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Herramientas Automáticas</button>
+            <div class="dropdown-content-hauto dropdown-content">
+                <a href="">Taladros</a>
+                <a href="">Sierras</a>
+                <a href="">Lijadoras</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Materiales Basicos</button>
+            <div class="dropdown-content-mat dropdown-content">
+                <a href="">Cemento</a>
+                <a href="">Arena</a>
+                <a href="">Ladrillos</a>
+                <a href="">Acabados</a>
+                <a href="">Pinturas</a>
+                <a href="">Barnices</a>
+                <a href="">Cerámicos</a>
+                </div>            
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Equipo de Seguridad</button>
+            <div class="dropdown-content-equip dropdown-content">
+                <a href="">Casos</a>
+                <a href="">Guantes</a>
+                <a href="">Lentes de Seguridad</a>
+                <a href="">Accesorios Varios</a>
+            </div>
+        </div>
+        <button>Tornillos y Anclajes</button>
+        <button>Fijaciones y Adhesivos</button>
+        <button>Equipos de Medicion</button>
+        <button>Iniciar sesion</button>
+        <button href="crear_cuenta.html">Crear Cuenta</button>
+
+    </nav>
+    
+    <main>
+<h1>Bienvenido a Ferremas</h1>
+
+        
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/ferreteria.jpg" style="width:100%">
+      <div class="text">Bienvenido a Ferremas</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/img2.jpg" style="width:100%">
+      <div class="text">Herramientas</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/img3.jpg" style="width:100%">
+      <div class="text">Materiales</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <h2>Productos Destacados</h2>
+
+
+    </main>
+
+</body>
+
+<footer>© 2024 Ferremas. Todos los derechos reservados</footer>
+</html>
