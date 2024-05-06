@@ -1,0 +1,107 @@
+/* Estilos para la barra de navegación */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    overflow: auto; /* Para manejar el colapso del contenedor */
+}
+
+nav .dropdown {
+    float: left; /* Alinea los elementos a la izquierda */
+    margin-right: 10px;
+}
+
+nav .dropdown:last-child {
+    float: right; /* Alinea el último elemento (Historial) a la derecha */
+}
+
+nav .dropdown a {
+    text-decoration: none;
+}
+
+nav .dropdown button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+nav .dropdown button:hover {
+    background-color: #555;
+}
+
+/* Estilos para los botones Aceptado, Detalle y Rechazado */
+.aceptado-btn,
+.detalle-btn,
+.rechazado-btn {
+    background-color: #007bff; /* Azul por defecto */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+/* Estilos específicos para el botón Aceptado */
+.aceptado-btn {
+    background-color: #28a745; /* Verde */
+}
+
+/* Estilos específicos para el botón Rechazado */
+.rechazado-btn {
+    background-color: #dc3545; /* Rojo */
+}
+
+/* Cambio de color al pasar el mouse sobre los botones */
+.aceptado-btn:hover,
+.detalle-btn:hover,
+.rechazado-btn:hover {
+    opacity: 0.8; /* Opacidad reducida al pasar el mouse */
+}
+
+/* Ajuste del margen izquierdo para los botones Aceptado y Rechazado */
+.aceptado-btn,
+.rechazado-btn {
+    margin-left: 10px;
+}
+
+/* Estilos para la lista de pedidos */
+.lista-pedidos {
+    margin-top: 20px;
+}
+
+.pedido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+}
+
+.pedido:last-child {
+    border-bottom: none;
+}
+
+.info-pedido span {
+    margin-right: 20px;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

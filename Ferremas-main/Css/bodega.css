@@ -1,0 +1,111 @@
+/* Estilo del encabezado */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav .dropdown {
+    display: inline-block;
+  }
+  
+  nav .dropdown a {
+    text-decoration: none;
+  }
+  
+  nav .dropdown button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+  }
+  
+  nav .dropdown button:hover {
+    background-color: #555;
+  }
+  
+  /* Estilo del cuerpo */
+  main {
+    padding: 20px;
+  }
+  
+  .contenedor {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Agregando transiciones a los cambios */
+  }
+  
+  .rectangulo {
+    flex: 1;
+    height: 100px;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease; /* Agregando transición de color de fondo */
+  }
+  
+  .numero {
+    width: 80px;
+    height: 100px;
+    background-color: #4caf50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    transition: background-color 0.3s ease; /* Agregando transición de color de fondo */
+  }
+  
+  /* Alinear texto verticalmente */
+  .rectangulo p, .numero p {
+    margin: 0;
+    line-height: 1.5; /* Ajustar la altura de línea para centrar verticalmente */
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Reglas de medios para hacer más responsivo */
+  @media screen and (max-width: 768px) {
+    .contenedor {
+      flex-direction: column;
+      align-items: stretch; /* Estirando los elementos para ocupar todo el ancho */
+    }
+  
+    .numero {
+      width: auto;
+    }
+  }
+  
+  /* Estilo adicional para mejorar la apariencia */
+  .contenedor:hover {
+    transform: translateY(-4px); /* Añadiendo un efecto de elevación al pasar el ratón */
+  }
+  
+  .contenedor:hover .rectangulo,
+  .contenedor:hover .numero {
+    transform: scale(1.05); /* Agrandando ligeramente los elementos al pasar el ratón */
+    transition: transform 0.3s ease; /* Transición suave para el cambio de tamaño */
+  }
+  
+  /* Comentarios adicionales para la claridad del código */
+  /* Asegurando un espaciado interno y externo consistente */
+  /* Alineando el texto verticalmente en el centro */
+  

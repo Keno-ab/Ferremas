@@ -1,0 +1,174 @@
+/* Estilo del encabezado */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav .dropdown {
+    display: inline-block;
+}
+
+nav .dropdown a {
+    text-decoration: none;
+}
+
+nav .dropdown button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+}
+
+nav .dropdown button:hover {
+    background-color: #555;
+}
+
+/* Estilo del cuerpo */
+main {
+    padding: 40px;
+}
+
+h1{
+    justify-content: center;
+    display: flex;
+}
+
+
+/* Estilo para el formulario de informes */
+#informe-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#informe-form h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#titulo,
+#informe {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Estilos CSS para el contenedor principal */
+/* Estilos CSS para el contenedor principal */
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Añadido para separar las tarjetas del formulario */
+    flex-wrap: wrap; /* Permite que las tarjetas se envuelvan a la siguiente línea */
+}
+
+/* Estilos CSS para el contenedor de tarjetas */
+.card-container {
+    padding: 15px;
+    flex: 1 0 300px; /* Establece el ancho máximo de cada tarjeta y permite que se ajuste */
+    max-width: calc(33.33% - 20px); /* Ancho máximo de 33.33% - 20px de margen entre las tarjetas */
+}
+
+/* Estilos CSS para la media card */
+.card {
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex; /* Mostrar tarjeta como flexbox */
+    flex-direction: column;
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Estilos CSS para el botón de gestión */
+.boton-gestionar {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-gestionar:hover {
+    background-color: #45a049;
+}
+
+/* Estilo del pie de página */
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Reglas de medios para hacer más responsivo */
+@media screen and (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: stretch; /* Estirando los elementos para ocupar todo el ancho */
+    }
+
+    .card-container {
+        width: 100%; /* Tarjetas ocupan todo el ancho en dispositivos pequeños */
+        margin: 10px 0; /* Espacio entre tarjetas en dispositivos pequeños */
+    }
+
+    #informe-form {
+        padding: 10px;
+    }
+
+    #titulo,
+    #informe {
+        margin-bottom: 10px;
+    }
+}

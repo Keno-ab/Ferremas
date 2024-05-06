@@ -1,0 +1,96 @@
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+  }
+  
+  nav .dropdown {
+    display: inline-block;
+  }
+  
+  nav .dropdown a {
+    text-decoration: none;
+  }
+  
+  nav .dropdown button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Transición suave para el cambio de color de fondo */
+  }
+  
+  nav .dropdown button:hover {
+    background-color: #555;
+  }
+
+/* Estilos para la vista detalle */
+.detalle-pedido {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-pedido span {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.productos {
+    margin-top: 20px;
+}
+
+.producto {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.total {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+/* Estilos para los botones Aceptar y Rechazar */
+.botones-aceptar-rechazar {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.aceptar-btn,
+.rechazar-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 0 10px; /* Espacio entre los botones */
+}
+
+.aceptar-btn:hover,
+.rechazar-btn:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
